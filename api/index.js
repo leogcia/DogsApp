@@ -23,11 +23,10 @@ const { axios } = require('axios');
 const preChargeTemperaments = require('./Utils/ChargeTemperament.js');
 
 // Syncing all the models at once.
-conn.sync({ force: false }).then( async () => {   //cambio a false para que no levante todo de nuevo cada vez que reinicie
+conn.sync({ force: true }).then( async () => {   
   server.listen(3001, () => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
   });
   await preChargeTemperaments();
 });
 
-axios
