@@ -1,0 +1,30 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Assets/puppies.jpg');
+    background-size: 100%;
+}
+
+.image {
+    filter:invert(80%);
+    width: 400px;
+    height: 400px;
+    animation-duration: 3s;
+    animation-name: image;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image {
+    50% {
+        width: 500px;
+        height: 300px;
+    }
+    
+    50% {
+        width: 400px;
+        height: 200px;
+    }
+}
+    

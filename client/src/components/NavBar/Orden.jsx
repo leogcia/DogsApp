@@ -7,8 +7,9 @@ import {
     getTemp,
     getZA,
     getAZ,
-    getSource
+    getSource,
 } from '../../actions/index';
+import styles from './Orden.module.css'
 
 
 
@@ -83,29 +84,28 @@ export default function Orden() {
 
     return (
         
-        <div className='container'>
-            <h1>Orden</h1>
+        <div className={styles.container}>
 
             <div>
-                <label className='label'>Name Order</label>
+                <label className={styles.labelName}>Name Order</label>
                 <br/>
-                    <button className='buttom' onClick={(e)=>orderAsc(e)}>Ascendente</button>
-                    <button className='buttom' onClick={(e)=>orderDesc(e)}>Descendente</button>
+                    <button className={styles.button} onClick={(e)=>orderAsc(e)}>Ascending Order</button>
+                    <button className={styles.button} onClick={(e)=>orderDesc(e)}>Descending Order</button>
             </div>
 
             <div>
-                <label className='label'>Weight Order</label>
+                <label className={styles.labelWeight}>Weight Order</label>
                 <br/>
-                    <button className='buttom' onClick={(e)=>orderLight(e)}>De ligero a pesado</button>
-                    <button className='buttom' onClick={(e)=>orderHeavy(e)}>De pesado a ligero</button>
+                    <button className={styles.button} onClick={(e)=>orderLight(e)}>From Lightest</button>
+                    <button className={styles.button} onClick={(e)=>orderHeavy(e)}>From Heaviest</button>
             </div>
 
             <div>
                 <form onSubmit={handleSubmit}>
-                    <label className='label'>Temperament!!</label>   
+                    <label className={styles.labelTemp}>Temperament!!</label>   
                     <br/>  
                     <select 
-                        className='select' 
+                        className={styles.select} 
                         onChange={handleChange}
                         name='By Temperaments'
                         value={selectTemp}>
@@ -115,18 +115,18 @@ export default function Orden() {
                             })
                         }
                     </select>
-                    <button type='submit' className='buttom'>{' '}Filter</button>
+                    <button type='submit' className={styles.button}>{' '}Filter</button>
                 </form>
             </div>
 
             <div>
                 <form>
-                    <label className='label'>Source</label>   
+                    <label className={styles.labelSource}>Source</label>   
                     <br/>  
-                    <select className='select' onChange={(e)=>handleSelect(e)}>
-                        <option value='ALL'>Todos</option>
-                        <option value='API'>De la Api</option>
-                        <option value='DB'>Creados</option>
+                    <select className={styles.select} onChange={(e)=>handleSelect(e)}>
+                        <option value='ALL'>All</option>
+                        <option value='API'>From Api</option>
+                        <option value='DB'>Created</option>
                     </select>
                 </form>
             </div>

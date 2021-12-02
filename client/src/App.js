@@ -6,12 +6,14 @@ import Home from './components/Home/Home';
 import CreateDog from './components/CreateDog/CreateDog';
 import DogDetail from './components/DogDetail/dogDetail';
 
+
+
 function App() {
   return (
     <React.Fragment>
       <Routes>
         <Route exact path="/" element={<LandingPage/>} />
-        <Route path="/home" element={<Home/>} />
+        <Route exact path="/home" element={<Home/>} />
         <Route exact path="/createDog" element={<CreateDog/>} />
         <Route exact path="/detail/:id" element={<DogDetail/>} />
       </Routes>

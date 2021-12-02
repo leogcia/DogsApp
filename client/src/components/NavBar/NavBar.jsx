@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { getDogs } from "../../actions";
 import SearchBar from "../SearchBar/SearchBar";
 import Orden from "./Orden";
+import styles from './NavBar.module.css'
 
 export default function NavBar() {
     const dispatch = useDispatch();
@@ -14,15 +15,14 @@ export default function NavBar() {
     }
 
     return (
-        <div className='navBar'>
-            <h1>Nav de Perros!!!</h1>
-            <Link to= '/createDog'><button className='button'>Crear Perro</button></Link>
-            <button onClick={e=> {handleClick(e)}}>Volver a cargar perros</button>
-            <Link to= '/'><button className='button'>Salir de App</button></Link>
-            <div className='list'>
-                <Orden/>
+        <div className={styles.navBar}>
+            <Link to= '/'><button className={styles.btnQuit}>Take a walk!!</button></Link>
+            <button onClick={e=> {handleClick(e)}} className={styles.btnHome}>Come Back!</button>
+            <Link to= '/createDog'><button className={styles.btnCreate}>Create Dog</button></Link>
+            <div className={styles.list}>
                 <SearchBar/>
             </div>
+            <Orden/>
 
         </div>
     )

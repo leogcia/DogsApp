@@ -67,6 +67,7 @@ export function getTemp() {
     };
 }
 
+
 export function getZA() {
     return function (dispatch) {
         return axios.get('http://localhost:3001/dog/')
@@ -112,7 +113,7 @@ export function getLight () {
                 }
 
                 if(!b.weight) {
-                    const metric = { metric: b.weight } ;
+                    const metric = b.weight  ;
                     b.weight = metric;
                 }
 
@@ -133,7 +134,7 @@ export function getHeavy() {
         return axios.get("http://localhost:3001/dog").then((dog) => {
             const orderHeavy = dog.data.sort((b, a) => {
                 if (b.id.length > 5) {
-                    const metric = { metric: b.weight };
+                    const metric =  b.weight ;
                     b.weight = metric;
                 }
                 if (parseInt(b.weight) < parseInt(a.weight)) return 1;

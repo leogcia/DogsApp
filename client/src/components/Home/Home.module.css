@@ -1,0 +1,15 @@
+.body {
+    height: 100vh;
+    background-image: url('../Assets/perritoconBalon.jpg');
+    width:100vw;
+    min-height:50vw;
+    height: 100%;
+    background-size: cover;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 10px;
+}

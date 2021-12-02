@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getName } from "../../actions";
+import styles from './SearchBar.module.css'
 
 export default function SearchBar() {
     const [dogState, setDogState] = useState('');
@@ -20,22 +21,21 @@ export default function SearchBar() {
 
 
     return (
-        <div className='searchBar'>
-            <h1>SearchBar</h1>
+        <div className={styles.searchBar}>
             <input
-                className='input'
+                className={styles.input}
                 type='text'
-                placeholder='Buscar raza...'
+                placeholder='Where are you my friend?'
                 value={dogState}
                 onChange={(el)=>handleIputChange(el)}>
             </input>
 
             <button 
-                className='searchButtom'
+                className={styles.btn}
                 onClick={(el)=>handleSubmit(el)}
                 type='submit'
             >
-                Start!!
+                Come Here!
             </button>
         </div>
 

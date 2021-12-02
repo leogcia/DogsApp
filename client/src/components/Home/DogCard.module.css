@@ -1,0 +1,28 @@
+.card {
+    text-decoration: none;
+    width: 250px;
+    height: 340px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 55px;
+    box-shadow: 0 2px 2px 2px rgb(20, 65, 15);
+    text-align:center;
+    background-color: hsla(0, 0%, 41%, 0.3);
+}
+
+.image {
+    border-radius: 20px; 
+    width: 150px; 
+    height:150px;
+    margin-top: 15px; 
+}
+
+.texto {
+    font-family:cursive;
+    text-align: center;
+    text-shadow: 0 0 3px #49534d;
+}
+
+.name {
+    text-shadow: 0 0 3px #343a36;
+}

@@ -1,0 +1,28 @@
+.searchBar {
+    background-color: rgba(231, 235, 174);
+    border: none;  
+    border-radius: 8px;
+    width: 280px;
+    height: 22%;
+    display: top;
+    align-items: flex-start;
+    margin-left: -80px;
+    margin-top: -20px;
+}
+
+.input {
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 2px;
+    margin-left: 10px;
+    background-color: rgba(231, 235, 174); 
+}
+
+.btn{
+    font-family:cursive;
+    background: transparent; 
+    border: transparent;
+    color: black;
+    margin-top: 2px;
+}
+    

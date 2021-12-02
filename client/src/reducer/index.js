@@ -39,10 +39,11 @@ function rootReducer(state = initialState, action) {
             }
         
         case GET_DOG_TEMP:
+            
             return {
                 ...state,
                 temps: action.payload
-            }
+            }  
 
         case ORDER_ZA:
             return {

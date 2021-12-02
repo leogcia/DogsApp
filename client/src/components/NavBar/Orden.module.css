@@ -1,0 +1,43 @@
+.container{
+    display:flex;
+    justify-content: left;
+}
+
+.labelSource, .labelWeight, .labelName, .labelTemp {
+    font-family:cursive;
+    margin-left: 20px;  
+    margin-top: 10px;
+    color: rgb(168, 13, 13);
+}
+
+.labelWeight { margin-left: 65px; }
+.labelName{ margin-left: 55px; }
+.labelTemp { margin-left: 10px; }
+.labelSource { margin-left: 10px; }
+
+.button{
+    font-family: cursive;
+    color: solid black;
+    border-color: solid black;
+    background-color: rgb(231, 235, 174);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 60px;
+    color: solid rgb(122, 24, 24);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.button:hover{
+    color: rgb(11, 12, 2);
+    background-color:turquoise;
+}
+
+.select{
+    font-family: cursive;
+    background-color: rgb(231, 235, 174);
+    border-radius: 5px;
+    margin-top: 15px;
+    
+    
+}

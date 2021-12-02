@@ -1,0 +1,126 @@
+.body{
+    background-image:url('../Assets/john\ wick.png');
+    width:100vw;
+    height: 600px;
+    min-height:50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    font-family: cursive;
+    text-align: center;
+    align-items: center;
+    color:rgba(238, 225, 37, 0.788);
+    text-shadow: 4px 3px #20201e9f;
+}
+
+
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    margin-left: 550px;
+    text-align:center;
+    flex-direction: row;
+    border: 2px solid rgba(221, 209, 42, 0.459);
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 41%, 0.623);
+}
+
+.label {
+    margin-left: 5px;
+    font-family: cursive;
+    color:rgb(221, 209, 42);
+    text-shadow: 1px 1px #2b2a2a;
+}
+
+.input{
+    background-color: rgb(184, 183, 183);
+    margin-top:15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+input:valid {
+    border: 2px solid rgb(8, 163, 37);
+}
+
+.erros {
+    text-align: center;
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px #2b2a2a;
+    letter-spacing: 1px;
+}
+
+.select{
+    margin-left: 25px ;
+    background-color:rgba(230, 200, 64, 0.781);
+}
+
+.countemp {
+    font-family: cursive;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background-color: rgba(86, 231, 81, 0.616);
+    border:2px solid rgb(26, 29, 26);
+    border-radius: 15px;
+    gap: 5px;
+    margin: 5px 8px;
+    padding: 0px 5px;
+}
+
+.sider_box {
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button, .buttonCreate {
+    font-family: cursive;
+    color: solid black;
+    border-color: solid black;
+    background-color: rgb(231, 235, 174);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: 550;
+}
+.buttonCreate {
+    font-size: 15px;
+    
+}
+
+.button:hover, .buttonCreate:hover {
+    color: rgb(11, 12, 2);
+    background-color:turquoise;
+}
+
+.btnclose{
+    color: rgba(15, 14, 14, 0.822);
+    background-color:rgba(177, 153, 153, 0.822);
+    border-radius: 10px;
+    width: 25px;
+}
+
+.btnclose:hover{
+    background-color:rgba(243, 67, 67, 0.822);
+    color: rgb(22, 21, 21);
+}
+
+.piepagina {
+    align-items: center;
+    margin-left: -3px;
+}

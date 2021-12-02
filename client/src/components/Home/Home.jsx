@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getDogs } from "../../actions/index";
 import DogCard from "./DogCard";
 import Paginado from "../Paginado/Paginado";
+import styles from './Home.module.css'
 import NavBar from "../NavBar/NavBar";
 
 
@@ -41,18 +42,21 @@ export default function Home () {
 
 
     return (
-        <>
+        
+        
+        <div className={styles.body}>
 
-            <NavBar/>
+            <NavBar/>   
 
-            <div>
-
-                <Paginado
-                dogsPerPage={dogsPerPage}
-                allDogs={allDogs.length}
-                paginado={paginado}
-                />
-
+                <div>
+                    <Paginado
+                        dogsPerPage={dogsPerPage}
+                        allDogs={allDogs.length}
+                        paginado={paginado}
+                    />
+                </div>
+            
+            <div className={styles.contenedor}>
             {
                 currentDogs?.map( (el) => {
                     return (
@@ -67,9 +71,8 @@ export default function Home () {
                     )                      
                 })
             }
-
             </div>
 
-        </>
+        </div>
     );
 };
