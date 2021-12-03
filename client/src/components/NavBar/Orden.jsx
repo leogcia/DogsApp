@@ -86,21 +86,21 @@ export default function Orden() {
         
         <div className={styles.container}>
 
-            <div>
+            <div className={styles.cardOrder}>
                 <label className={styles.labelName}>Name Order</label>
                 <br/>
                     <button className={styles.button} onClick={(e)=>orderAsc(e)}>Ascending Order</button>
                     <button className={styles.button} onClick={(e)=>orderDesc(e)}>Descending Order</button>
             </div>
 
-            <div>
+            <div className={styles.cardWeight}>
                 <label className={styles.labelWeight}>Weight Order</label>
                 <br/>
                     <button className={styles.button} onClick={(e)=>orderLight(e)}>From Lightest</button>
                     <button className={styles.button} onClick={(e)=>orderHeavy(e)}>From Heaviest</button>
             </div>
 
-            <div>
+            <div className={styles.card}>
                 <form onSubmit={handleSubmit}>
                     <label className={styles.labelTemp}>Temperament!!</label>   
                     <br/>  
@@ -119,7 +119,7 @@ export default function Orden() {
                 </form>
             </div>
 
-            <div>
+            <div className={styles.card}>
                 <form>
                     <label className={styles.labelSource}>Source</label>   
                     <br/>  

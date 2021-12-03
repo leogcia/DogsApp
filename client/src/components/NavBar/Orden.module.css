@@ -6,24 +6,36 @@
 .labelSource, .labelWeight, .labelName, .labelTemp {
     font-family:cursive;
     margin-left: 20px;  
-    margin-top: 10px;
+    text-shadow: tomato;
+    padding-top: 10px;
     color: rgb(168, 13, 13);
+    
 }
 
 .labelWeight { margin-left: 65px; }
-.labelName{ margin-left: 55px; }
+.labelName{ margin-left: 75px; }
 .labelTemp { margin-left: 10px; }
 .labelSource { margin-left: 10px; }
 
+.card, .cardOrder {
+    margin: 5px;
+}
+
+.cardOrder {
+    height: 120px;
+}
+
+.cardWeight {
+    margin-left: -62px;
+}
+
 .button{
     font-family: cursive;
-    color: solid black;
-    border-color: solid black;
+    color:black;
     background-color: rgb(231, 235, 174);
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 15px;
     margin-left: 60px;
-    color: solid rgb(122, 24, 24);
     font-size: 13px;
     font-weight: 500;
 }

@@ -19,10 +19,12 @@
 }
 
 .btn{
+    
     font-family:cursive;
     background: transparent; 
     border: transparent;
     color: black;
     margin-top: 2px;
+    cursor: pointer;
 }
     

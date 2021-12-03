@@ -1,13 +1,16 @@
 .card {
-    text-decoration: none;
+    transition: box-shadow 0.3s ease;
     width: 250px;
     height: 340px;
     border-radius: 5px;
     margin: 10px;
     margin-left: 55px;
-    box-shadow: 0 2px 2px 2px rgb(20, 65, 15);
     text-align:center;
     background-color: hsla(0, 0%, 41%, 0.3);
+}
+
+.card:hover {
+    box-shadow: 0 2px 2px 2px rgb(20, 65, 15);   
 }
 
 .image {

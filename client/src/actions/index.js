@@ -107,15 +107,6 @@ export function getLight () {
         return axios.get('http://localhost:3001/dog')
         .then((dog) => {
             const orderLight = dog.data.sort((a, b) => {
-                if(!a.weight) {
-                    const metric = a.weight;
-                    a.weight = metric;
-                }
-
-                if(!b.weight) {
-                    const metric = b.weight  ;
-                    b.weight = metric;
-                }
 
                 if(parseInt(a.weight) > parseInt(b.weight)) return 1;
                 if(parseInt(a.weight) < parseInt(b.weight)) return -1;
@@ -133,10 +124,7 @@ export function getHeavy() {
     return function (dispatch) {
         return axios.get("http://localhost:3001/dog").then((dog) => {
             const orderHeavy = dog.data.sort((b, a) => {
-                if (b.id.length > 5) {
-                    const metric =  b.weight ;
-                    b.weight = metric;
-                }
+                
                 if (parseInt(b.weight) < parseInt(a.weight)) return 1;
                 if (parseInt(b.weight) > parseInt(a.weight)) return -1;
                 return 0;

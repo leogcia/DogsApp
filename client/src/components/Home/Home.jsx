@@ -21,6 +21,7 @@ export default function Home () {
     const indexOfFirstDog = indexOfLastDog - dogsPerPage;
     const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog);
 
+    //Card de DataBase
     allDogs?.map((e) =>{
         if(e.createdInDb){
             e.image = url
@@ -42,7 +43,6 @@ export default function Home () {
 
 
     return (
-        
         
         <div className={styles.body}>
 
