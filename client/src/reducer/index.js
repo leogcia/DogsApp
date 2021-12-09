@@ -39,11 +39,10 @@ function rootReducer(state = initialState, action) {
             }
         
         case GET_DOG_TEMP:
-            
             return {
                 ...state,
-                temps: action.payload
-            }  
+                temps: action.payload,
+            }
 
         case ORDER_ZA:
             return {
@@ -89,13 +88,13 @@ function rootReducer(state = initialState, action) {
         case DB:
             return {
                 ...state, 
-                filter: state.dogsLoaded.filter(b => b.id.length > 6).sort()
+                filter: state.dogsLoaded.filter(b => b.createdInDb)
             }
 
         case API:
             return {
                 ...state,
-                filter: state.dogsLoaded.filter(b => b.id < 500).sort()
+                filter: state.dogsLoaded.filter(b => !b.createdInDb)
             }
 
         case ALL:

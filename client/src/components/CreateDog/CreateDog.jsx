@@ -66,7 +66,7 @@ export default function CreateDog(){
 
     function handleSelect(el) {
         if (input.temperament.includes((el.target.value))) {
-            alert("Temperament selected already. Try again :)");
+            alert("Temperament already selected. Try again :)");
         } else {
             setInput({
                 ...input,
@@ -115,6 +115,7 @@ export default function CreateDog(){
             <div className={styles.container}>
                 <div className={styles.card}>
                 <form onSubmit={handleSubmit}>
+
                     <div>
                         <label className={styles.label}>Breed:</label>
                             <input

@@ -67,7 +67,6 @@ export function getTemp() {
     };
 }
 
-
 export function getZA() {
     return function (dispatch) {
         return axios.get('http://localhost:3001/dog/')

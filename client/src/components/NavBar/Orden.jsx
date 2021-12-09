@@ -54,18 +54,13 @@ export default function Orden() {
         let filtered = [];
 
         dogs?.forEach((el) =>{
-            if(el.id.length) {
-                el.temperaments.map((temp) =>               
-                    temp.name === selectTemp ? filtered.push(el) : null
-                );
-            } else {
                 if(el.temperament?.includes(selectTemp)) {    
                     filtered.push(el)
-                }
             }
         })
 
         dispatch(filter(filtered))
+
     }
 
     function handleSelect(el) {
@@ -81,6 +76,7 @@ export default function Orden() {
         setTempToFilterBy([...tempToFilterBy, selectTemp]);
         handleClick();
     }
+
 
     return (
         
@@ -108,14 +104,16 @@ export default function Orden() {
                         className={styles.select} 
                         onChange={handleChange}
                         name='By Temperaments'
-                        value={selectTemp}>
+                        // value={selectTemp}
+                        >
+                        <option value="all" >Temperaments:</option>
                         {
                             temp?.map((temp) => {
                                 return <option value={temp.name}>{temp.name}</option>
                             })
                         }
                     </select>
-                    <button type='submit' className={styles.button}>{' '}Filter</button>
+                    <button type='submit' className={styles.button}>Filter</button>
                 </form>
             </div>
 
