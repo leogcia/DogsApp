@@ -13,7 +13,7 @@ const getApiInfo = async () => {
             weight: e.weight.metric,
             life_span: e.life_span,
             temperament: e.temperament,
-            image: e.image.url
+            image: e.image.url,
         }
     });
 
@@ -70,6 +70,7 @@ const postDog = async (req, res) => {
     let dogTemperamentDb = await Temperament.findAll({
         where: { name: temperament }
     })
+
     dogCreate.addTemperament(dogTemperamentDb);
     res.send(dogCreate)
 
