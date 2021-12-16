@@ -25,12 +25,6 @@ La idea general es crear una aplicación en la cual se puedan ver distintas raza
   - Filtrarlos / Ordenarlos
   - Agregar nuevos perros
 
-
-### Únicos Endpoints/Flags que pueden utilizar
-
-  - GET https://api.thedogapi.com/v1/breeds
-  - GET https://api.thedogapi.com/v1/breeds/search?q={raza_perro}
-
 ### Requerimientos mínimos:
 
 __IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrá que utilizar (CSS puro, CSS Modules o Styled Components)
